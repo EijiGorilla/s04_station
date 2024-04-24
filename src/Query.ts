@@ -296,107 +296,105 @@ export async function generateTotalProgress(station: any) {
     return [total_number, total_comp];
   });
 
-  //   const stFoundationCompile = stFoundationLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const stFoundationCompile = stFoundationLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const stFramingCompile = stFramingLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const stFramingCompile = stFramingLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const floorsCompile = floorsLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const floorsCompile = floorsLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const wallsCompile = wallsLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const wallsCompile = wallsLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const roomsCompile = roomsLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const roomsCompile = roomsLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const massCompile = massLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const massCompile = massLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const specialityEquipmentCompile = specialtyEquipmentLayer
-  //     .queryFeatures(query)
-  //     .then((response: any) => {
-  //       var stats = response.features[0].attributes;
-  //       const total_number = stats.total_number;
-  //       const total_comp = stats.total_comp;
+  const specialityEquipmentCompile = specialtyEquipmentLayer
+    .queryFeatures(query)
+    .then((response: any) => {
+      var stats = response.features[0].attributes;
+      const total_number = stats.total_number;
+      const total_comp = stats.total_comp;
 
-  //       return [total_number, total_comp];
-  //     });
+      return [total_number, total_comp];
+    });
 
-  //   const stairsCompile = stairsLayer.queryFeatures(query).then((response: any) => {
-  //     var stats = response.features[0].attributes;
-  //     const total_number = stats.total_number;
-  //     const total_comp = stats.total_comp;
+  const stairsCompile = stairsLayer.queryFeatures(query).then((response: any) => {
+    var stats = response.features[0].attributes;
+    const total_number = stats.total_number;
+    const total_comp = stats.total_comp;
 
-  //     return [total_number, total_comp];
-  //   });
+    return [total_number, total_comp];
+  });
 
-  //   const stcolumn = await stColumnCompile;
-  //   const stfoundation = await stFoundationCompile;
-  //   const stframing = await stFramingCompile;
-  //   const floors = await floorsCompile;
-  //   const walls = await wallsCompile;
-  //   const rooms = await roomsCompile;
-  //   const mass = await massCompile;
-  //   const specialityEquipment = await specialityEquipmentCompile;
-  //   const stairs = await stairsCompile;
+  const stcolumn = await stColumnCompile;
+  const stfoundation = await stFoundationCompile;
+  const stframing = await stFramingCompile;
+  const floors = await floorsCompile;
+  const walls = await wallsCompile;
+  const rooms = await roomsCompile;
+  const mass = await massCompile;
+  const specialityEquipment = await specialityEquipmentCompile;
+  const stairs = await stairsCompile;
 
-  //   const total =
-  //     stcolumn[0] +
-  //     stfoundation[0] +
-  //     stframing[0] +
-  //     floors[0] +
-  //     walls[0] +
-  //     rooms[0] +
-  //     mass[0] +
-  //     specialityEquipment[0] +
-  //     stairs[0];
+  const total =
+    stcolumn[0] +
+    stfoundation[0] +
+    stframing[0] +
+    floors[0] +
+    walls[0] +
+    rooms[0] +
+    mass[0] +
+    specialityEquipment[0] +
+    stairs[0];
 
-  //   const comp =
-  //     stcolumn[1] +
-  //     stfoundation[1] +
-  //     stframing[1] +
-  //     floors[1] +
-  //     walls[1] +
-  //     rooms[1] +
-  //     mass[1] +
-  //     specialityEquipment[1] +
-  //     stairs[1];
-  //   const progress = ((comp / total) * 100).toFixed(1);
-  //   return [total, comp, progress];
-
-  return [100, 10, 5];
+  const comp =
+    stcolumn[1] +
+    stfoundation[1] +
+    stframing[1] +
+    floors[1] +
+    walls[1] +
+    rooms[1] +
+    mass[1] +
+    specialityEquipment[1] +
+    stairs[1];
+  const progress = ((comp / total) * 100).toFixed(1);
+  return [total, comp, progress];
 }
 
 // Thousand separators function
