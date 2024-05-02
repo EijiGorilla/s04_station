@@ -15,7 +15,6 @@ import BuildingSceneLayer from '@arcgis/core/layers/BuildingSceneLayer';
 import SolidEdges3D from '@arcgis/core/symbols/edges/SolidEdges3D';
 import { render } from '@testing-library/react';
 
-/* Standalone table for Dates */
 export const dateTable = new FeatureLayer({
   portalItem: {
     id: 'b2a118b088a44fa0a7a84acbe0844cb2',
